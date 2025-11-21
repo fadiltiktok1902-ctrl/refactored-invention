@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Birthday Scinoraa!</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0A0F29, #3A1C71);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    h1 {
+        color: #E0B0FF;
+        margin-top: 40px;
+    }
+    .card {
+        background: rgba(255,255,255,0.08);
+        border-radius: 16px;
+        padding: 20px;
+        margin: 30px auto;
+        max-width: 600px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+    .scara-img {
+        width: 160px;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+    p {
+        line-height: 1.6em;
+        margin-bottom: 10px;
+    }
+.slideshow {
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    .slide {
+        width: 100%;
+        border-radius: 16px;
+        display: none;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+</style>
+</head>
+<body>
+<h1>🎉🎂 Selamat Ulang Tahun, Scinoraa! 🎂🎉</h1><div class="slideshow">
+    <img class="slide" src="https://i.ibb.co/s9pSkqs/scin1.jpg" alt="Scinoraa 1">
+    <img class="slide" src="https://i.ibb.co/TkmsQSm/scin2.jpg" alt="Scinoraa 2">
+    <img class="slide" src="https://i.ibb.co/Q8rLs8x/scin3.jpg" alt="Scinoraa 3">
+</div><img class="scara-img" src="https://static.wikia.nocookie.net/gensin-impact/images/f/f5/Scaramouche.png" alt="Scaramouche"/><div class="card">
+<p>Hari ini, coba lihat ke belakang sejenak—liat sejauh apa kamu udah jalan.<br>
+Banyak hari yang mungkin berat, tapi kamu tetep bisa bertahan dan tetep punya senyum yang tulus sampai detik ini. Itu nggak semua orang bisa.</p><p>Aku nggak mau cuma ngucapin "panjang umur" atau "sehat selalu" doang.<br>
+Aku mau kamu tau:<br>
+<b>Kamu itu penting.</b><br>
+Keberadaanmu itu bikin hidup banyak orang jadi lebih berwarna,<br>
+Kamu nggak pernah tau berapa banyak senyum yang kamu tebarkan tanpa sadar.</p><p>Aku berharap di usia yang baru ini:<br>
+Kamu makin sering nemuin kebahagiaan-kebahagiaan kecil—yang sering kali kamu lewatkan karena sibuk.<br>
+Seperti hujan di sore hari, obrolan santai yang nggak direncanain, atau secangkir kopi yang pas manisnya.</p><p>Semoga mimpi-mimpimu yang selama ini disimpan rapat,<br>
+pelan-pelan mulai berani keluar dan nemuin jalannya sendiri.<br>
+Semoga kamu tetap kuat, tapi nggak kehilangan kelembutan hatimu.<br>
+Karena dunia butuh orang sepertimu—yang peduli, bukan cuma tampak peduli.</p><p>Dan inget, Scinoraa,<br>
+kalau suatu saat kamu lelah, sedih, atau bingung…<br>
+di suatu tempat, ada matahari terbit yang tunggu kamu,<br>
+ada orang yang bersyukur karena mengenalmu,<br>
+dan masih banyak cerita baik yang belum selesai ditulis untukmu.</p><p>Hari ini, rayakan dirimu—sepenuhnya, tanpa rasa bersalah.<br>
+<b>Kamu layak.</b></p><p>Selamat ulang tahun, Scinoraa.<br>
+Semoga tahun ini jadi babak baru yang penuh cerita indah,<br>
+tawa yang dalam, hati yang tenang,<br>
+dan senyuman yang selalu kembali menghampiri. 🌟🎁💖</p>
+</div><button id="btnScinn">PENCET SCINN</button>
+
+<script>
+    document.getElementById('btnScinn').addEventListener('click', function() {
+        alert('Selamat ulang tahun dari Fadil Azrevan Nugroho!');
+    });
+</script><script>
+let slideIndex = 0;
+function showSlides() {
+    let slides = document.getElementsByClassName('slide');
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex-1].style.display = 'block';
+    setTimeout(showSlides, 3000);
+}
+showSlides();
+</script><button id="btnScinn">PENCET SCINN</button>
+
+<script>
+    document.getElementById('btnScinn').addEventListener('click', function() {
+        alert('Selamat ulang tahun dari Fadil Azrevan Nugroho!');
+    });
+</script></body>
+</html>
