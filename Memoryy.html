@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memories🎮</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Gunakan background yang sama atau yang Anda pilih */
+            background: linear-gradient(135deg, #0A0F29, #3A1C71); 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #E0B0FF;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 15px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .gallery-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+        .gallery-item img {
+            width: 100%;
+            max-width: 300px; 
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+        p {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+        .back-button {
+            display: block;
+            background: #FFD700;
+            color: #0A0F29;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 40px;
+            max-width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 0.2s;
+        }
+        .back-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    
+    <audio id="birthday-music" loop>
+        <source src="NIKIlowkey.mp3" type="audio/mp3">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+    <button id="auto-play-btn" style="display: none;"></button> 
+
+    <h1>🎮 Kenangan Gaming Bersama Scinoraa 🎮</h1>
+
+    <div class="gallery">
+        
+        <div class="gallery-item">
+            <img src="Screenshot_2025-07-06-23-55-10-444_com.roblox.client~2.jpg" alt="Screenshot Genshin 1">
+            <p>Momen awal pertemuan</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="IMG_20251122_052518_375.jpg" alt="Screenshot Genshin 2">
+            <p>Main 2 player obby:)</p>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="IMG_20251122_052558_771.jpg" alt="Screenshot Genshin 3">
+            <p>Momen nyantai di evade</p>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="IMG_20251122_052636_844.jpg" alt="Screenshot Genshin 4">
+            <p>Momen foto di game horror</p>
+        </div>
+      
+        <div class="gallery-item">
+            <img src="IMG_20251109_093924_076.jpg" alt="Screenshot Genshin 5">
+            <p>Momen random genshin.</p>
+        </div>
+      
+        <div class="gallery-item">
+            <img src="IMG_20251122_052339_828.jpg" alt="Screenshot Genshin 6">
+            <p>Momen sehabis ngalahin boss</p>
+        </div>
+      
+        <div class="gallery-item">
+            <img src="20251109221105.jpg" alt="Screenshot Genshin 7">
+            <p>Momen random saat eksplorasi.</p>
+        </div>
+        
+    </div> <a href="HBD.html" class="back-button">Kembali ke Ucapan</a>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const music = document.getElementById('birthday-music');
+            const autoPlayBtn = document.getElementById('auto-play-btn');
+
+            // 1. Coba memutar musik secara langsung (walau sering diblokir)
+            music.play().catch(error => {
+                // 2. Jika gagal (karena diblokir), kita gunakan klik virtual pada tombol
+                autoPlayBtn.addEventListener('click', () => {
+                    music.play().catch(e => console.error("Gagal putar musik setelah klik:", e));
+                });
+                // Memicu klik virtual segera setelah halaman dimuat
+                autoPlayBtn.click();
+            });
+        });
+    </script>
+    </body>
+</html>
